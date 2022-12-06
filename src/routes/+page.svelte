@@ -5,12 +5,13 @@
 </script>
 
 <!-- <h1>{data.posts}</h1> -->
+
 <div class="title">
   {#each data.posts as post}
     <div  class="post">
       <h2>{post.title.substring(0, 20)}</h2>
       <p>{post.body.substring(0, 150)}</p>
-      <p class="link"><a href={`/[id]/${post.id}`}>Read More</a></p>
+      <p class="link"><a href={`/blog/${post.id}`}>Read More</a></p>
 
     </div>
    
@@ -36,8 +37,6 @@
  .link{
   text-align: right;
  }
- 
-
 </style>
 
 
